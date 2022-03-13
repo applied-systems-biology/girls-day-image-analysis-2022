@@ -4,18 +4,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Alert, Col, Container, Form, Navbar, Row, Tab, Tabs} from "react-bootstrap";
 import ReactFlow from "react-flow-renderer";
+import VideoNode from "./VideoNode";
 
+const nodeTypes = {
+    videoNode: VideoNode,
+};
+const nodeWidth = 200;
 const elements = [
-    { id: 'raw', data: { label: 'Raw' }, position: { x: 0, y: 0 }, sourcePosition: "left", targetPosition: "right" },
-    { id: 'preprocessed', data: { label: 'Preprocessed' }, position: { x: 200, y: 0 }, sourcePosition: "left", targetPosition: "right" },
-    { id: 'thresholded', data: { label: "Thresholded" }, position: { x: 400, y: 0 }, sourcePosition: "left", targetPosition: "right" },
-    { id: 'final', data: {label: "Final"}, position: { x: 600, y: 0 }, sourcePosition: "left", targetPosition: "right" },
+    { id: 'raw', type: "videoNode", data: { label: 'Unbearbeitet' }, position: { x: 0, y: 0 }, sourcePosition: "left", targetPosition: "right" },
+    { id: 'preprocessed', type: "videoNode", data: { label: 'Vorprozessiert' }, position: { x: nodeWidth + 100, y: 0 }, sourcePosition: "left", targetPosition: "right" },
+    { id: 'thresholded', type: "videoNode", data: { label: "Segmentiert" }, position: { x: 2 * (nodeWidth + 100), y: 0 }, sourcePosition: "left", targetPosition: "right" },
+    { id: 'final', type: "videoNode", data: {label: "Nachprozessiert"}, position: { x: 3 * (nodeWidth + 100), y: 0 }, sourcePosition: "left", targetPosition: "right" },
     { id: "e-raw-preprocessed", source: "raw", target: "preprocessed", animated: true, type: "step" },
     { id: "e-preprocessed-thresholded", source: "preprocessed", target: "thresholded", animated: true, type: "step" },
     { id: "e-thresholded-final", source: "thresholded", target: "final", animated: true, type: "step" }
 ];
-
 const flowStyles = { height: 500 };
+
 
 function App() {
     return (
@@ -47,7 +52,7 @@ function App() {
                                 </Alert>
                             </Row>
                             <Row>
-                                <Col><ReactFlow elements={elements} style={flowStyles} /></Col>
+                                <Col><ReactFlow elements={elements} style={flowStyles} nodeTypes={nodeTypes} /></Col>
                             </Row>
                             <Row>
                                 <Col>
