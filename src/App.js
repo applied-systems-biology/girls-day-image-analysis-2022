@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Navbar, Tab, Tabs} from "react-bootstrap";
 import {AlgorithmPlayground} from "./components/AlgorithmPlayground";
 import {InfoText} from "./components/InfoText";
+import {EndText} from "./components/EndText";
 
 function App() {
     return (
@@ -26,7 +27,7 @@ function App() {
                         <AlgorithmPlayground />
                     </Tab>
                     <Tab eventKey={"detailed-analysis"} title={"Was ist wirklich hinter der Analyse?"}>
-
+                        <EndText/>
                     </Tab>
                 </Tabs>
             </Container>

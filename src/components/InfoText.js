@@ -23,10 +23,9 @@ export class InfoText extends Component {
                         </Col>
                         <Col className={"bg-blur text-white rounded-2"}>
                             <Card.Body>
-                                <Card.Title>Pilze der Gattung Mortierella zeigen eine gesunde Bodenstruktur an.
-                                    Sie werden in der Landwirtschaft auch als pflanzenwachstumsfördernde Pilze eingesetzt.</Card.Title>
-                                <Card.Text >Auf dem Bild siehst du eine Mikroskopieaufnahme des eigentlichen Pilzes (der Hyphe).
-                                    Die Hyphe selbst ist mit einem Farbstoff blau gefärbt.
+                                <Card.Title>Im Boden lebende Pilze sind gut für das Pflanzenwachstum</Card.Title>
+                                <Card.Text >Auf dem Bild siehst du eine Mikroskopieaufnahme eines Pilzfadens (Hyphe).
+                                    Diese ist mit einem Farbstoff blau gefärbt.
                                     Innen drin sieht man grün gefärbe Bakterien, die mit dem Pilz in einer Symbiose (beide haben etwas davon) zusammenleben.</Card.Text>
                             </Card.Body>
                         </Col>
@@ -94,6 +93,9 @@ export class InfoText extends Component {
                 <Card>
                     <Card.Body>
                         <Card.Title>Quellen</Card.Title>
+                        <Card.Text>
+                            Hier findest du weiterführende Informationen, falls dich das Thema interessiert:
+                        </Card.Text>
                     </Card.Body>
                     <ListGroup className={"list-group-flush"}>
                         <ListGroupItem>Vollständiger Text: <a href={"https://www.leibniz-hki.de/de/pressemitteilung/mikroben-vereint-gegen-den-feind.html"} target={"_blank"}>https://www.leibniz-hki.de/de/pressemitteilung/mikroben-vereint-gegen-den-feind.html</a></ListGroupItem>
