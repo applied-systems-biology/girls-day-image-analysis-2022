@@ -24,6 +24,7 @@ export class AlgorithmPlayground extends Component {
     constructor(props) {
         super(props);
         this.state = DataDescription["initial-state"];
+        this.state["alert-visible"] = true;
     }
 
     setControlValue(controlId, event) {
@@ -147,7 +148,7 @@ export class AlgorithmPlayground extends Component {
             { id: "e-preprocessed-thresholded", source: "preprocessed", target: "thresholded", animated: true, type: "step" },
             { id: "e-thresholded-final", source: "thresholded", target: "final", animated: true, type: "step" }
         ];
-        return (<ReactFlow elements={elements} style={flowStyles} nodeTypes={nodeTypes} />)
+        return (<ReactFlow className={"mt-3"} elements={elements} style={flowStyles} nodeTypes={nodeTypes} />)
     }
 
     createScoreBoard() {
@@ -175,7 +176,7 @@ export class AlgorithmPlayground extends Component {
         return (
             <Container>
                 <Row>
-                    <Alert variant={"success"} className={"mt-3"} >
+                    <Alert variant={"success"} className={"mt-3"} show={this.state["alert-visible"]} onClose={() => this.setState({ "alert-visible": false })} dismissible={true}>
                         <p>
                             Hier kannst du die Analyse der Wurm-Bilder einmal selbst durchspielen. Wir haben schon
                             eine geeignete Pipeline dafür gebaut ... aber es gibt noch einige Parameter zu optimieren.
