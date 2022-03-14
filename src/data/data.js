@@ -2,19 +2,19 @@ const DataDescription = {
   "controls": {
     "#Ds": {
       "label": "Bild",
-      "options": ["0", "1", "2", "3", "4"]
+      "options": ["0", "1", "2", "3", "4", "5"]
     },
     "#method": {
       "label": "Segmentierung: Methode",
-      "options": ["Huang", "Otsu", "Triangle"]
+      "options": ["Huang", "Otsu", "Triangle", "Yen", "RenyiEntropy"]
     },
     "#sigma-x": {
       "label": "Vorprozessierung: Glättungsstärke",
-      "options": ["1.0", "3.0", "5.0"]
+      "options": ["1.0", "2.0", "3.0", "4.0", "5.0"]
     },
     "#min-particle-size": {
       "label": "Nachprozessierung: Maximale Größe (px²)",
-      "options": ["500.0", "1000.0", "1500.0"]
+      "options": ["0.0", "500.0", "1000.0", "1500.0", "2000.0"]
     }
   },
   "control-order": ["#sigma-x", "#method", "#min-particle-size"],
@@ -22,7 +22,7 @@ const DataDescription = {
     "#Ds": "0",
     "#method": "Otsu",
     "#sigma-x": "5.0",
-    "#min-particle-size": "500.0"
+    "#min-particle-size": "0.0"
   }
 }
 
