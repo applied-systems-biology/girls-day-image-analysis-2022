@@ -121,19 +121,19 @@ export class AlgorithmPlayground extends Component {
     renderEvaluatedScore(scoreString) {
         const score = parseFloat(scoreString)
         if (score > 99) {
-            return ( <><span>{score}</span><br/><span className={"score-evaluation-perfect"}>Perfekt!</span></> )
+            return ( <><span>{score}/100</span><br/><span className={"score-evaluation-perfect"}>Perfekt!</span></> )
         }
-        else if(score > 90) {
-            return ( <><span>{score}</span><br/><span className={"score-evaluation-good"}>Gut!</span></> )
+        else if(score >= 90) {
+            return ( <><span>{score}/100</span><br/><span className={"score-evaluation-good"}>Gut!</span></> )
         }
-        else if(score > 80) {
-            return ( <><span>{score}</span><br/><span className={"score-evaluation-ok"}>OK</span></> )
+        else if(score >= 80) {
+            return ( <><span>{score}/100</span><br/><span className={"score-evaluation-ok"}>OK</span></> )
         }
-        else if(score > 70) {
-            return ( <><span>{score}</span><br/><span className={"score-evaluation-bad"}>Schlecht</span></> )
+        else if(score >= 70) {
+            return ( <><span>{score}/100</span><br/><span className={"score-evaluation-bad"}>Schlecht</span></> )
         }
         else {
-            return ( <><span>{score}</span><br/><span className={"score-evaluation-very-bad"}>Ganz schlecht!</span></> )
+            return ( <><span>{score}/100</span><br/><span className={"score-evaluation-very-bad"}>Ganz schlecht!</span></> )
         }
     }
 
