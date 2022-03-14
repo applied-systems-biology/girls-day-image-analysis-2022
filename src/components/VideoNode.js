@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 import { Handle } from 'react-flow-renderer';
-import nematode_video from "./videos/nematodes-movie-0.webm"
 import {Card} from "react-bootstrap";
 
 export default memo(({ data, isConnectable }) => {
@@ -18,7 +17,7 @@ export default memo(({ data, isConnectable }) => {
                     {data.label}
                 </Card.Header>
                 <Card.Body>
-                    <video src={nematode_video} autoPlay={true} loop={true} width={200} height={200} controls={false} muted={true}/>
+                    <video src={data.video} autoPlay={true} loop={true} width={200} height={200} controls={false} muted={true}/>
                 </Card.Body>
             </Card>
             <Handle

@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.score-evaluation-perfect {
+  color: #11d116;
+}
+
+.score-evaluation-good {
+  color: #2ecc71;
+}
+
+.score-evaluation-ok {
+  color: #c9ce3b;
+}
+
+.score-evaluation-bad {
+  color: #f67400;
+}
+
+.score-evaluation-very-bad {
+  color: #ed1515;
+}
