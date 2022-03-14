@@ -74,3 +74,6 @@
   position: relative;
 }
 
+.bg-blur {
+  backdrop-filter: brightness(60%) blur(8px);
+}

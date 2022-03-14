@@ -6,7 +6,7 @@ const DataDescription = {
     },
     "#method": {
       "label": "Segmentierung: Methode",
-      "options": ["Huang", "Otsu", "Triangle", "Yen", "RenyiEntropy"]
+      "options": ["Huang", "Otsu", "Yen", "Triangle", "RenyiEntropy"]
     },
     "#sigma-x": {
       "label": "Vorprozessierung: Glättungsstärke",

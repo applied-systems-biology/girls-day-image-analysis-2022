@@ -183,6 +183,7 @@ export class AlgorithmPlayground extends Component {
                         </p>
                         <p>
                             Probiere doch einmal die Einstellungen unten durch und versuche eine möglichst hohe Punktzahl zu bekommen!
+                            Und ein Bild ist natürlich nicht genug. Es soll ja für alle Bilder gut funktionieren!
                         </p>
                     </Alert>
                 </Row>

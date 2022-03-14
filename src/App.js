@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Navbar, Tab, Tabs} from "react-bootstrap";
 import {AlgorithmPlayground} from "./components/AlgorithmPlayground";
+import {InfoText} from "./components/InfoText";
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
             <Container>
                 <Tabs defaultActiveKey={"info"} className={"mt-3"}>
                     <Tab eventKey={"info"} title={"Was wird analysiert?"}>
-
+                        <InfoText/>
                     </Tab>
                     <Tab eventKey={"analysis"} title={"Bildanalyse selbst ausprobieren!"}>
                         <AlgorithmPlayground />
