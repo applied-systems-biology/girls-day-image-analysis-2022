@@ -37,23 +37,32 @@ export class AlgorithmPlayground extends Component {
     createForm() {
         return (
             <Form>
-                { DataDescription["control-order"].map(controlId => (
-                    <Fragment key={"control-form-" + controlId}>
-                        <Row>
-                            <Col>
-                                <Form.Label>{DataDescription["controls"][controlId]["label"]}</Form.Label>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Range min={0} max={DataDescription["controls"][controlId]["options"].length - 1} defaultValue={DataDescription.controls[controlId].options.indexOf(this.state[controlId])} onChange={event => this.setControlValue(controlId, event)}/>
-                            </Col>
-                            <Col xs={"auto"}>
-                                <Form.Label>{this.state[controlId]}</Form.Label>
-                            </Col>
-                        </Row>
-                    </Fragment>
-                )) }
+                { DataDescription["control-order"].map(controlId => {
+                    const maxValue = DataDescription["controls"][controlId]["options"].length - 1;
+                    const styleValue = {
+                        "--step": 1,
+                        "--min": 0,
+                        "--max": maxValue
+                    };
+                    return (
+                        <Fragment key={"control-form-" + controlId}>
+                            <Row>
+                                <Col>
+                                    <Form.Label>{DataDescription["controls"][controlId]["label"]} <span className={"slider-value-label"}>= {this.state[controlId]}</span></Form.Label>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <Form.Range min={0} max={maxValue}
+                                                defaultValue={DataDescription.controls[controlId].options.indexOf(this.state[controlId])}
+                                                onChange={event => this.setControlValue(controlId, event)}
+                                                className={"range"}
+                                                style={styleValue}/>
+                                </Col>
+                            </Row>
+                        </Fragment>
+                    );
+                }) }
             </Form>
         )
     }
