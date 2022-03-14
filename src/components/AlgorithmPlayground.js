@@ -1,5 +1,14 @@
 import {Component, Fragment} from "react";
-import {Alert, Col, Container, Form, Row, Table} from "react-bootstrap";
+import {
+    Alert,
+    Button,
+    ButtonGroup,
+    Col,
+    Container,
+    Form,
+    Row,
+    Table
+} from "react-bootstrap";
 import ReactFlow from "react-flow-renderer";
 import VideoNode from "./VideoNode";
 import DataDescription from "../data/data";
@@ -47,6 +56,16 @@ export class AlgorithmPlayground extends Component {
                 )) }
             </Form>
         )
+    }
+
+    createImageSelectForm() {
+        return <ButtonGroup className={"mb-5"}>
+            {
+                Object.keys(DataMap.archive.raw).map(dataSetId => (
+                    <Button active={this.state["#Ds"] === dataSetId} key={"image-select-" + dataSetId} onClick={() => this.setState({ "#Ds": dataSetId })}>{dataSetId}</Button>
+                ))
+            }
+        </ButtonGroup>
     }
 
     getFileNameForCurrentState(step) {
@@ -122,11 +141,11 @@ export class AlgorithmPlayground extends Component {
     }
 
     createScoreBoard() {
-        return (<Table striped={true} bordered={true}>
+        return (<Table bordered={true}>
             <thead><tr><th>Bild Nr.</th><th>Ergebnis</th></tr></thead>
             <tbody>
             { Object.keys(DataMap.archive.post).map(dataSetId =>
-                (<tr key={"score-" + dataSetId}>
+                (<tr key={"score-" + dataSetId} className={ this.state["#Ds"] === dataSetId ? "table-active" : "" }>
                     <td>{dataSetId}</td>
                     <td>{this.renderEvaluatedScore(this.getScoreForCurrentState(dataSetId))}</td>
                 </tr>)
@@ -161,6 +180,7 @@ export class AlgorithmPlayground extends Component {
                 </Row>
                 <Row>
                     <Col>
+                        { this.createImageSelectForm() }
                         { this.createForm() }
                     </Col>
                     <Col>{ this.createScoreBoard() }</Col>
