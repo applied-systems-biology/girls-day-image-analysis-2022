@@ -35,7 +35,7 @@ export class InfoText extends Component {
                     <Row>
                         <Col>
                         </Col>
-                        <Col className={"bg-blur text-black rounded-2 "}>
+                        <Col className={"bg-blur text-white rounded-2 "}>
                             <Card.Body>
                                 <Card.Title>Fadenwürmer sind natürliche Fressfeinde der Pilze</Card.Title>
                                 <Card.Text >Auf dem Bild siehst du eine Mikroskopieaufnahme des Pilzes und einiger Fadenwürmer (Nematoden), die den Pilz fressen.
