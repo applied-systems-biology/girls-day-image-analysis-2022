@@ -59,13 +59,14 @@ export class AlgorithmPlayground extends Component {
     }
 
     createImageSelectForm() {
-        return <ButtonGroup className={"mb-5"}>
+        return (<ButtonGroup className={"mb-5"}>
+            <Button variant={"info"}>Bild auswählen:</Button>
             {
                 Object.keys(DataMap.archive.raw).map(dataSetId => (
-                    <Button active={this.state["#Ds"] === dataSetId} key={"image-select-" + dataSetId} onClick={() => this.setState({ "#Ds": dataSetId })}>{dataSetId}</Button>
+                    <Button active={this.state["#Ds"] === dataSetId} key={"image-select-" + dataSetId} onClick={() => this.setState({ "#Ds": dataSetId })}>#{dataSetId}</Button>
                 ))
             }
-        </ButtonGroup>
+        </ButtonGroup>)
     }
 
     getFileNameForCurrentState(step) {
@@ -146,7 +147,7 @@ export class AlgorithmPlayground extends Component {
             <tbody>
             { Object.keys(DataMap.archive.post).map(dataSetId =>
                 (<tr key={"score-" + dataSetId} className={ this.state["#Ds"] === dataSetId ? "table-active" : "" }>
-                    <td>{dataSetId}</td>
+                    <td>#{dataSetId}</td>
                     <td>{this.renderEvaluatedScore(this.getScoreForCurrentState(dataSetId))}</td>
                 </tr>)
             )}
