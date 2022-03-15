@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.ff441f7d.css",
-    "main.js": "./static/js/main.f22925bc.js",
+    "main.js": "./static/js/main.e686318e.js",
     "static/js/787.aadc28e8.chunk.js": "./static/js/787.aadc28e8.chunk.js",
     "static/media/904.webm": "./static/media/904.5cfaff4d06a758e6e8aa.webm",
     "static/media/163.webm": "./static/media/163.340b65d0f2e24e5561cd.webm",
@@ -951,11 +951,11 @@
     "static/media/GirlsDay_Logo.png": "./static/media/GirlsDay_Logo.b00bbe13b5600504f71a.png",
     "index.html": "./index.html",
     "main.ff441f7d.css.map": "./static/css/main.ff441f7d.css.map",
-    "main.f22925bc.js.map": "./static/js/main.f22925bc.js.map",
+    "main.e686318e.js.map": "./static/js/main.e686318e.js.map",
     "787.aadc28e8.chunk.js.map": "./static/js/787.aadc28e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff441f7d.css",
-    "static/js/main.f22925bc.js"
+    "static/js/main.e686318e.js"
   ]
 }
