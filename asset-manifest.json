@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.ff441f7d.css",
-    "main.js": "./static/js/main.f3183c78.js",
+    "main.js": "./static/js/main.f22925bc.js",
     "static/js/787.aadc28e8.chunk.js": "./static/js/787.aadc28e8.chunk.js",
     "static/media/904.webm": "./static/media/904.5cfaff4d06a758e6e8aa.webm",
     "static/media/163.webm": "./static/media/163.340b65d0f2e24e5561cd.webm",
@@ -257,7 +257,6 @@
     "static/media/73.webm": "./static/media/73.e3ff920b0e1551d730aa.webm",
     "static/media/381.webm": "./static/media/381.18462e9965d90fd93a6e.webm",
     "static/media/318.webm": "./static/media/318.a7d508a0aea55e17ef20.webm",
-    "static/media/team.png": "./static/media/team.451312ff2a2e163ff206.png",
     "static/media/620.webm": "./static/media/620.325dd56779f08015768a.webm",
     "static/media/436.webm": "./static/media/436.2f75577a6fece4f00799.webm",
     "static/media/592.webm": "./static/media/592.4cb6a79e8681384dde1a.webm",
@@ -319,6 +318,7 @@
     "static/media/745.webm": "./static/media/745.82891f5a52765ba40d2e.webm",
     "static/media/201.webm": "./static/media/201.20a6e3c54bfd3959503e.webm",
     "static/media/793.webm": "./static/media/793.6cd761aed83de68158cd.webm",
+    "static/media/team.png": "./static/media/team.a4e87e180adc97a09901.png",
     "static/media/414.webm": "./static/media/414.4d7fdca61f08d5d18e65.webm",
     "static/media/716.webm": "./static/media/716.cc13abca712e9182b7cf.webm",
     "static/media/509.webm": "./static/media/509.2b7d375870eb72f4c8c6.webm",
@@ -951,11 +951,11 @@
     "static/media/GirlsDay_Logo.png": "./static/media/GirlsDay_Logo.b00bbe13b5600504f71a.png",
     "index.html": "./index.html",
     "main.ff441f7d.css.map": "./static/css/main.ff441f7d.css.map",
-    "main.f3183c78.js.map": "./static/js/main.f3183c78.js.map",
+    "main.f22925bc.js.map": "./static/js/main.f22925bc.js.map",
     "787.aadc28e8.chunk.js.map": "./static/js/787.aadc28e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff441f7d.css",
-    "static/js/main.f3183c78.js"
+    "static/js/main.f22925bc.js"
   ]
 }
