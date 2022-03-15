@@ -75,11 +75,5 @@
 }
 
 .bg-blur {
-  backdrop-filter: brightness(60%) blur(8px);
-}
-
-@supports not (backdrop-filter: brightness(60%) blur(8px)) {
-  .bg-blur {
-    background: rgba(0,0,0,0.4);
-  }
+  background: rgba(0,0,0,0.8);
 }
