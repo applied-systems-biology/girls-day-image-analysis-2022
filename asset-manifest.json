@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4245360b.css",
-    "main.js": "./static/js/main.07d325bd.js",
+    "main.css": "./static/css/main.ff441f7d.css",
+    "main.js": "./static/js/main.f3183c78.js",
     "static/js/787.aadc28e8.chunk.js": "./static/js/787.aadc28e8.chunk.js",
     "static/media/904.webm": "./static/media/904.5cfaff4d06a758e6e8aa.webm",
     "static/media/163.webm": "./static/media/163.340b65d0f2e24e5561cd.webm",
@@ -836,6 +836,7 @@
     "static/media/507.webm": "./static/media/507.0e39bbf0ac101ae2a06d.webm",
     "static/media/120.webm": "./static/media/120.8b3fbdf90faf46d4dd2f.webm",
     "static/media/731.webm": "./static/media/731.267cbf92a74ec77eecb5.webm",
+    "static/media/results.png": "./static/media/results.b36d962a494e205dfbb9.png",
     "static/media/515.webm": "./static/media/515.77508f559e8c588acb98.webm",
     "static/media/668.webm": "./static/media/668.cc402e70ea39a9493cc2.webm",
     "static/media/365.webm": "./static/media/365.2581e5fd66925753fd2a.webm",
@@ -949,12 +950,12 @@
     "static/media/compartments.png": "./static/media/compartments.190480b33e670a1d1156.png",
     "static/media/GirlsDay_Logo.png": "./static/media/GirlsDay_Logo.b00bbe13b5600504f71a.png",
     "index.html": "./index.html",
-    "main.4245360b.css.map": "./static/css/main.4245360b.css.map",
-    "main.07d325bd.js.map": "./static/js/main.07d325bd.js.map",
+    "main.ff441f7d.css.map": "./static/css/main.ff441f7d.css.map",
+    "main.f3183c78.js.map": "./static/js/main.f3183c78.js.map",
     "787.aadc28e8.chunk.js.map": "./static/js/787.aadc28e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4245360b.css",
-    "static/js/main.07d325bd.js"
+    "static/css/main.ff441f7d.css",
+    "static/js/main.f3183c78.js"
   ]
 }
