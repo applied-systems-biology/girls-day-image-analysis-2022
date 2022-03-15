@@ -13,7 +13,7 @@ const DataDescription = {
       "options": ["1.0", "2.0", "3.0", "4.0", "5.0"]
     },
     "#min-particle-size": {
-      "label": "Nachprozessierung: Maximale Größe (px²)",
+      "label": "Nachprozessierung: Minimale Größe (px²)",
       "options": ["0.0", "500.0", "1000.0", "1500.0", "2000.0"]
     }
   },
